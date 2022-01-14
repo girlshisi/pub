@@ -1,0 +1,139 @@
+@charset"utf-8";
+*{margin: 0;padding:0}
+li{list-style: none;}
+a{text-decoration: none;
+  display: block;
+  color:inherit;}
+  img{display: block;border: 0;}
+  .cf:after{content: "";
+             display: block;
+            clear:both;}
+#wrap{width: 1200px;height: 700px;
+margin: 0 auto;}
+header{height: 100px; }
+#slide{height: 300px;}
+#content{height: 200px;}
+footer{height: 100px;background: #ccc;}
+
+/* header */
+.logo{
+    width: 200px;
+    padding: 30px 0;
+    float: left;
+}
+nav{
+    width: 1000px;
+    height: 100px;
+    float: left;
+}
+
+.sub{display: none;}
+/* .gnb:hover .sub{display: block;} */
+.gnb a{
+    width: 150px;line-height: 40px;
+    text-align: center;
+    background: #ffa;
+    
+}
+.gnb>li{
+    float: left;
+}
+.gnb{
+    width: 600px;
+    position: relative;
+    top:30px;left:380px;
+    z-index: 1;/* 为了能在slide前面显示 */
+}
+.gnb li:hover>a{
+    background: #adf;
+}
+/* slide */
+#slide{
+    overflow: hidden;
+}
+#slide ul{
+    animation: slide 9s infinite;
+}
+@keyframes slide{
+    0%{margin-top:0;}
+    33%{margin-top:-300px;}
+    66%{margin-top:-600px;}
+    100%{margin-top:-900;}
+}
+/* content */
+section{
+    width: 380px;height: 180px;
+    padding: 10px;
+    float: left;
+}
+.tab a{
+    width: 120px;
+    line-height: 40px;
+    text-align: center;
+    background: #eee;
+}
+.tab a:hover{
+    background: #ffc;
+}
+.tab>li{
+    float: left;
+}
+.notice a{
+   line-height: 35px;
+   background: #eee;
+   padding: 0 10px;
+
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;   /* diandian省略号 */
+}
+.notice a:hover{
+    background: #ffc;
+}
+.gallery li{
+    float: left;
+    padding: 20px 0 20px 20px;
+}
+.gallery{
+    background: #eee;
+    display: none;
+
+}
+.gallery a:hover{
+    opacity: .6;
+}
+/* popup */
+#popup{
+    width: 100vw;
+    height: 100vh;
+    background:rgba(0,0,0,.8) ;
+    position: absolute;
+    top:0;left:0;
+    z-index: 999;
+    display: none;
+}
+.popup_body{
+    width: 600px;
+    height: 400px;
+    background: #fff;
+    border: 3px #69f solid;
+    border-radius: 10px;
+    position: absolute;
+    top:50%;left:50%;
+    top:calc(40% - 200px);
+    left:calc(50% - 200px);
+    text-align: center;
+}
+.popup_body h3{
+    line-height: 80px;
+    font-size: 32px;
+}
+.popup_body p{
+    height: 260px;
+    padding: 0 20px;
+    text-align: left;
+}
+.close{
+    width: 100px;
+    line-height: 40px;
+}
