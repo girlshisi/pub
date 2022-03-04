@@ -1,0 +1,226 @@
+@charset"utf-8";
+*{margin: 0;padding:0}
+li{list-style: none;}
+a{text-decoration: none;
+  display: block;
+  color:inherit;}
+  img{display: block;border: 0;}
+  .cf:after{content: "";
+             display: block;
+            clear:both;}
+ header{background: #333;}
+ footer{background: #333;} 
+ 
+ #header{width: 1200px;height: 100px;margin: 0 auto;background: #eeff;}
+ #slide{width: 1200px;height: 300px;margin: 0 auto;background: #aaf;}
+ #content{width: 1200px;height: 200px;margin: 0 auto;background: #77f;}
+ #footer{width: 1200px;height: 100px;margin: 0 auto;background: #ccf;}
+
+/* header */
+.logo{
+    width: 200px;
+    padding: 30px 0;
+    float: left;
+}
+nav{
+    width: 1000px;
+    height: 100px;
+    float: left;
+  }
+
+.sub{display: none;height: 160px;background: #fff;}
+/* .gnb li:hover .sub{display: block;} */
+.gnb a{
+    width: 150px;line-height: 40px;
+    text-align: center;
+    background: #fff;
+    }
+.gnb>li{
+    float: left;
+}
+.gnb{
+    position: relative;
+    top:30px;left:380px;
+    z-index: 10;/* 为了能在slide前面显示 */
+    width: 600px;
+}
+.gnb li:hover>a{
+    background: #333;
+    color: #ffa;
+}
+
+
+/* slide 几秒能变换*/
+#slide{
+    overflow: hidden;
+}
+#slide ul{
+    animation: fade 9s infinite;
+}
+@keyframes fade{
+    0%{margin-top:0;opacity: 0;}
+    3%{margin-top:0;opacity: 1;}
+    30%{margin-top:0;opacity: 1;}
+    33%{margin-top:0;opacity: 0;}
+
+    33.1%{margin-top:-300px-;opacity: 0;}
+    36%{margin-top:-300px;opacity: 1;}
+    63%{margin-top:-300px;opacity: 1;}
+    66%{margin-top:-300px;opacity: 0;}
+
+   66.1%{margin-top:-600px;opacity: 0;}
+  69%{margin-top:-600px;opacity: 1;}
+  97%{margin-top:-600px;opacity: 1;}
+ 100%{margin-top:-600px;opacity: 0;}
+
+}
+/* content */
+#content section{
+    width: 380px;
+    height: 180px;
+    padding: 10px;
+    float: left;
+}
+.tab a{
+    width: 190px;
+    line-height:30px;
+    text-align: center;
+    background: #eee;
+    transition:.3s;
+}
+.tab a:hover{
+     background: #ffa; }
+
+.tab>li{
+    float: left;
+}
+.notice a{
+   line-height: 25px;
+   background: #eee;
+   padding: 0 10px;
+    height: 25px;
+    transition: .3s;
+
+}
+.notice a:hover{
+    background: #ffa;
+}
+    .notice .subject{
+        width: 260px;
+        float: left; 
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;   /* diandian省略号 */}
+    .notice .date{width: 100px;float:left;text-align: right;
+    }
+
+
+.gallery img{width: 100px;}
+
+.gallery li{
+    float: left;
+    padding: 25px 0 25px 20px;
+
+}
+.gallery{
+    background: #eee;
+    display: none;
+   }
+.gallery a:hover{
+    opacity: .6;
+
+}
+/* 배너 */
+section:nth-child(2) a{width:150px;margin:0 auto ;}
+section:nth-child(2) a:hover{opacity: .6;}
+section:nth-child(2) p{text-align: center;line-height: 30px;}
+section:nth-child(2) img{width:150px; }
+figcaption{text-align: center;}
+/* 바로가기 */
+.shortcut img{width: 100px;}
+.shortcut li{
+    padding: 25px 0 25px 20px;
+    float: left;
+
+}
+.shortcut h3{text-align: center ;}
+.shortcut a:hover{opacity: .6;}
+
+/* footer */
+.f_right{
+    width: 1000px;
+    height: 100px;
+    float: left;
+}
+.bmenu a{
+    display: inline;
+    line-height: 40px;
+}
+ .bmenu a:hover{text-decoration: underline;}
+.bmenu{
+    text-align: center;
+}
+.copyright{text-align: center;}
+
+
+
+
+
+
+
+
+
+/* popup */
+#popup{
+    width: 100%;
+    height: 100vh;
+   
+    position: fixed;
+    top:0;left:0;
+   background: rgba(0,0,0,.8);
+    z-index: 100;
+    display: none;
+}
+.popup_body{
+    width: 600px;
+    height: 400px;
+    background: #fff;
+    border: 3px dodgerblue solid;
+    border-radius: 10px;
+    position: absolute;
+    top:50%;left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.popup_body h3{
+    line-height: 60px;
+   
+}
+.popup_body p{
+    
+    padding: 0 30px;
+    text-align: left;
+}
+/* 엑스박스 */
+.close{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top:10px;left:550px;
+    cursor: pointer;
+}
+.bar{
+    width: 32px;
+    height: 2px;
+    background: #aaa;
+    position: absolute;
+    top:50%;left:50%;
+    
+}
+.bar:nth-child(1){
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.bar:nth-child(2){
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+.close:hover .bar{background: #333;}

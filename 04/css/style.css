@@ -1,0 +1,201 @@
+@charset"utf-8";
+*{margin: 0;padding:0}
+li{list-style: none;}
+a{text-decoration: none;
+  display: block;
+  color:inherit;}
+  img{display: block;border: 0;}
+  .cf:after{content: "";
+             display: block;
+            clear:both;}
+#wrap{
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+}
+header{height: 100px; }
+#slide{height: 300px;}
+#content{height: 200px;}
+footer{height: 100px;}
+
+/* header */
+.logo{
+    width: 200px;
+    padding: 30px 0;
+    float: left;
+   
+   
+}
+nav{
+    width: 1000px;
+    height: 100px;
+    float: left;
+  
+}
+
+.sub{display: none;color: #fff;}
+/* .gnb li:hover .sub{display: block;} */
+.gnb a{
+    width: 150px;line-height: 40px;
+    text-align: center;
+   
+   
+    }
+.gnb>li{float: left; }
+
+
+.gnb{
+    position: relative;
+    top:60px;left:380px;
+    z-index: 10;/* 为了能在slide前面显示 */
+    width: 600px;
+}
+.nav_back{
+    width: 1200px;
+    height: 150px;
+    background: #333;
+    position: absolute;
+    top:100px;
+    z-index: 1;
+    display: none;
+}
+
+.gnb>li:hover>a{
+    background: #333;
+    color: #fff;
+   }
+
+.sub>li:hover>a{
+    background: #fff;
+    color: #333;
+}
+
+/* slide 几秒能变换*/
+#slide{
+    overflow: hidden;
+}
+#slide ul{
+    animation: fade 3s infinite;
+}
+@keyframes fade{
+    0%{margin-top:0;opacity: 0;}
+    3%{margin-top:0;opacity: 1;}
+    30%{margin-top:0;opacity: 1;}
+    33%{margin-top:0;opacity: 0;}
+
+    33.1%{margin-top:-300px-;opacity: 0;}
+    36%{margin-top:-300px;opacity: 1;}
+    63%{margin-top:-300px;opacity: 1;}
+    66%{margin-top:-300px;opacity: 0;}
+
+   66.1%{margin-top:-600px;opacity: 0;}
+  69%{margin-top:-600px;opacity: 1;}
+  97%{margin-top:-600px;opacity: 1;}
+ 100%{margin-top:-600px;opacity: 0;}
+
+}
+/* content */
+#content section{
+    width: 380px;
+    height: 180px;
+    padding: 10px;
+    float: left;
+}
+.title{
+    line-height: 39px;
+    text-align: center;
+    border-bottom: 1px #ccc solid;
+}
+
+.notice a{
+    padding: 0 10px;
+    line-height: 25px;
+    height: 25px; 
+    /* transition: .3s; */
+
+}
+.notice a:hover{
+    background: #ffa;
+}
+
+    .notice .subject{
+        width: 260px;
+        float: left; 
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;   /* diandian省略号 */}
+    .notice .date{width: 100px;float:left;text-align: right;
+    }
+.gallery img{width: 100px;}
+
+.gallery li{
+    float: left;
+    padding:20px 0 20px 20px;
+
+}
+
+.gallery a{
+    overflow: hidden;
+    outline:1px #ccc solid;
+   
+}  
+.gallery a:hover img{
+    transform: scale(1.1,1.1);
+    transform: .3s;
+
+}
+/* 바로가기 */
+.shortcut li{
+    padding: 20px 0 0 20px;
+}
+
+.shortcut h3{
+    text-align: center ;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+
+/* footer */
+.hmenu{
+    width: 1000px;
+    height: 50px;
+    float: left;
+  
+    
+}
+
+.hmenu li{
+    width:250px;
+    float:left;
+     text-align:center;
+     position: relative;
+     top:25px
+    }
+
+.copyright{
+    width: 1000px;
+    height: 50px;
+    float: left;
+    text-align: center;
+   
+    font-size: 13px;
+    line-height: 15px;}
+.family{
+        width: 200;
+        height: 100px;
+        float: right;
+        text-align: center;
+        padding:34px 0;
+    
+    }
+    .family select{
+        height: 25px;
+        width: 150px;
+    }
+
+
+
+
+
+

@@ -10,19 +10,7 @@ $(".gnb").hover(
     }
 );
 
-/* tab */
-$(".tab1").click(  /*   공지사항 클릭하면 */
-    function(){
-        $(".notice").show();
-        $(".gallery").hide();
-    }
-);
-$(".tab2").click(  /* 겔러리 클릭하면 */
-    function(){
-        $(".notice").hide();
-        $(".gallery").show();
-    }
-);
+
 $(".open").click(
     function(){
         // $("#popup").show();
@@ -32,6 +20,6 @@ $(".open").click(
 $(".close").click(
     function(){
         // $("#popup").hide();
-        $("#popup").fadeout();
+        $("#popup").fadeOut();
     }
 );
