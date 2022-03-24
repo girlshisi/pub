@@ -80,8 +80,9 @@ nav{width: 1000px;height: 100px;float: left;}
 .banner li:nth-child(1){
     width: 120px;
     padding:25px 0 25px 20px;
-    opacity: .6; 
+    
  }
+ .banner li:nth-child(1):hover{opacity: .6;}
 .banner li:nth-child(2){
     width: 260px;
     padding:25px 20px 25px 20px;
@@ -97,5 +98,5 @@ nav{width: 1000px;height: 100px;float: left;}
 }
 .sns{width: 200px;height: 100px;float: left;text-align: center; }
 .sns img{width: 40px;}
-.sns a{display: inline-block;;margin:30px 5px;}
+.sns a{display: inline-block;margin:30px 10px;}
 
