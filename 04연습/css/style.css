@@ -1,0 +1,145 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{
+    display: block;
+    text-decoration: none;
+    transition: .3;
+    color: inherit;
+}
+img{display: block;border: 0;}
+.cf:after{
+    display: block;
+    content:"";
+    clear: both;
+}
+#wrap{width: 1200px;height: 700px;margin: 0 auto;}
+header{height: 100px;}
+#slide{height: 300px;}
+#content{height: 200px;}
+footer{height: 100px;background: #ccc;}
+
+.logo img{width: 200px;}
+.logo{
+    width: 200px;
+    height: 50px;
+    padding: 25px 0;
+    float: left;
+}
+nav{width: 1000px;height: 100px;float: left;}
+
+.sub{display: none;}
+/* .gnb:hover .sub{display: block;} */
+.gnb{
+    width: 600px;
+    position:relative;
+    top:60px;left:380px;
+    z-index: 10;
+}
+.gnb>li{float: left;width: 150px;}
+.gnb a{
+    text-align: center;
+    line-height: 40px;
+    
+   
+}
+
+
+.gnb li:hover a{background: #faf}
+.sub li:hover a{background: #adf;}
+.nav_back{
+    width: 1200px;
+    height: 180px;
+    background: #faf;
+    position: absolute;
+    top:100px;
+    z-index: 9;
+    display: none;
+}
+
+#slide{overflow: hidden;}
+#slide ul{animation: fade 9s infinite;}
+@keyframes fade{
+    0%{margin-top: 0;opacity: 0;}
+    3%{margin-top: 0;opacity: 1;}
+    30%{margin-top: 0;opacity: 1;}
+    33%{margin-top: 0;opacity: 0;}
+
+    33.1%{margin-top: -300px;opacity: 0;}
+    36%{margin-top: -300px;opacity: 1;}
+    63%{margin-top: -300px;opacity: 1;}
+    66%{margin-top: -300px;opacity: 0;}
+
+    66.1%{margin-top: -600px;opacity: 0;}
+   69%{margin-top: -600px;opacity: 1;}
+    97%{margin-top: -600px;opacity: 1;}
+    100%{margin-top: -600px;opacity: 0;}
+
+}
+
+#content section{
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+}
+#content h3{
+    text-align: center;
+    line-height: 30px;
+    
+    
+}
+.notice a{
+    line-height: 25px;
+    padding: 0 10px;
+    height: 25px;
+}
+.notice a:hover{background: #adf;}
+.subject{
+    width: 240px;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+.date{width: 120px;float: left;text-align: right;}
+
+.gallery li{
+    padding: 25px 0 25px 20px;
+    float: left;
+}
+.shortcut  img{width: 100px;}
+.shortcut li{
+    padding: 15px 0 15px 20px;
+    float: left;
+}
+.shortcut h3{
+    text-align: center;
+    line-height: 20px;
+    font-size: 16px;
+}
+.f_left{
+    width: 1000px;
+    height: 100px;
+    float: left;
+    text-align: center;
+    font-size: 13px;
+}
+.f_menu a{display: inline;line-height: 40px;}
+
+
+
+.family{
+    float: left;
+   width: 200px;
+   height: 40px;
+   text-align: center;
+   margin-top:30px;
+}
+  
+
+
+
+

@@ -1,0 +1,125 @@
+@charset "utf-8";
+*{margin:0; padding:0;}
+li{list-style: none;}
+a{
+    text-decoration: none;
+    display:block;
+    color:inherit;
+    transition: .3s;
+}
+img{
+    display:block;
+    border:0;
+}
+.cf:after{
+    content:""; display:block; clear:both;
+}
+#wrap{width: 1000px;height: 650px;}
+#left{width: 200px;height: 650px;float: left;}
+#right{width: 800px;height: 650px;float: left;}
+.logo{
+    width: 200px;
+    padding: 30px 0;
+}
+nav{width: 200px;height: 550px;}
+.sub{display: none;}
+/* .gnb li:hover .sub{display: block;} */
+.gnb{
+    width: 180px;
+    position: relative;
+    top:30px;left:10px;
+}
+.gnb a{
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+}
+.gnb li:hover>a{background: #333;color: #fff;}
+.gnb>li{outline: 1px #333 solid;}
+#slide{width: 800px;height: 350px;overflow: hidden;}
+#slide ul{animation: fade 9s infinite;}
+@keyframes fade{
+    0%{margin-top: 0;opacity: 0;}
+    3%{margin-top: 0;opacity: 1;}
+   30%{margin-top: 0;opacity: 1;}
+    33%{margin-top: 0;opacity: 0;}
+
+    33.1%{margin-top: -350px;opacity: 0;}
+    36%{margin-top: -350px;opacity: 1;}
+   63%{margin-top: -350px;opacity: 1;}
+    66%{margin-top:-350px;opacity: 0;}
+
+    66.1%{margin-top: -700px;opacity: 0;}
+    69%{margin-top:-700px;opacity: 1;}
+   97%{margin-top:-700px;opacity: 1;}
+    100%{margin-top:-700px;opacity: 0;}
+}
+#content{width: 800px;height: 200px;}
+#content section{
+    width: 240px;
+    height: 180px;
+    padding: 10;
+    float: left;
+}
+#content section:first-child{width: 260px;}
+#content .tab a{
+    width: 130px;
+    line-height: 30px;
+    text-align: center;
+}
+#content .tab a:hover{background: #69f;}
+#content .tab li{ float: left;}
+.notice a{
+    font-size: 13px;
+    line-height: 30px;
+    height: 30px;
+}
+.notice a:hover{background: #adf;}
+.subject{
+    width: 180px;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.date{width:80px ;float: left;text-align: right;}
+.gallery img{width: 70px;}
+.gallery li{
+    float: left;
+    padding:40px 5px 0 5px ;
+}
+.gallery a:hover{opacity: .6;}
+.gallery{display: none;}
+
+.banner img{width: 70px;float: left;}
+.banner{margin: 20px 30px;}
+.banner li:nth-child(2){
+    text-align: center;
+    font-size: 13px;
+    float: left;
+}
+.shortcut img{width:70px}
+.shortcut li{
+    float: left;
+    padding:40px 5px 0 5px ;
+}
+.shortcut h3{
+    text-align: center;
+    font-size: 13px;
+}
+footer{width: 800px;height: 100px;background: #ccc;}
+.f-logo{float: left;}
+.f_right{
+    width: 600px;
+    height: 100px;
+    float: left;
+}
+.f_menu {text-align: center;}
+
+.f_menu a{
+    display: inline;
+    
+}
+.copyright{
+    text-align: center;font-size: 13px;
+}

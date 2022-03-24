@@ -1,0 +1,108 @@
+@charset"utf-8";
+*{margin: 0;padding:0}
+li{list-style: none;}
+a{
+    text-decoration: none;
+   display: block;
+   color:inherit;
+   transition: .3s;
+
+}
+  img{display: block;border: 0;}
+  .cf:after{
+            content: "";
+             display: block;
+            clear:both;
+          }
+
+header{background: #eee;}
+footer{background: #eee;}
+#header{width: 1200px;height: 100px;margin: 0 auto;} 
+#slide{width:1200px;height: 300px;margin: 0 auto;}
+#content{width:1200px;height: 200px;margin: 0 auto;}
+#footer{width:1200px;height: 100px;margin: 0 auto;}
+
+.logo{
+  width: 200px;
+  padding: 30px 0;
+  float: left;
+}
+nav{width: 1000px;height: 100px;float: left;}
+
+.sub{display: none;height: 160px;background: #fff;}
+/* .gnb:hover .sub{display: block;} */
+.gnb{
+  width: 600px;
+  position: relative;
+  top:30px;left:380px;
+  
+  z-index: 10;
+}
+.gnb>li{width: 150px;float: left;}
+.gnb a{
+  text-align: center;
+  line-height: 40px;
+  background: #fff;
+ 
+ 
+}
+
+.gnb li:hover>a{background: #333;color: #fff;}
+
+#slide{overflow: hidden;}
+#slide ul{animation: slide 9s infinite;width: 400%;}
+#slide li{float: left;}
+@keyframes slide{
+  0%{margin-left: 0;}
+  33.3333%{margin-left: -100%;}
+  66.6666%{margin-left: -200%;}
+  100%{margin-left: -300%;}
+}
+
+#content section{
+  width: 380px;
+  height: 180px;
+  padding: 10px;
+  float: left;}
+  .tab a{
+    width: 190px;
+    height: 30px;
+    text-align: center;
+
+  }
+  .tab>li{float: left;}
+  .tab a:hover{background: #edf;}
+  .notice a{
+    width: 360px;
+    height:25px ;
+    line-height: 25px;
+    padding: 0 10px;
+  }
+  .notice a:hover{text-decoration: underline;background: #ccc;}
+  .notice .subject{
+    width: 240px;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .notice .date{width: 120px;float: left;text-align: right;}
+  .gallery img{width: 100px;}
+  .gallery li{padding:25px 0 25px 20px ;float: left;}
+  .gallery{display: none;}
+  .gallery a:hover{opacity: .6;}
+
+  .banner img{width: 100px;}
+  
+  .banner li:nth-child(2){text-align: center;padding: 20px 0;}
+
+  .shortcut img{width: 100px;}
+  .shortcut li{float: left;padding: 25px 0 25px 20px;}
+  .shortcut h3{text-align: center;}
+
+  .f_right{width: 1000px;height: 100px;float: left;}
+  .f_menu a{display: inline;line-height: 40px;}
+  .f_menu{text-align: center;}
+  .copyright{text-align: center;}
+
+ 

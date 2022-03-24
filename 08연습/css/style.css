@@ -1,0 +1,101 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{display: block;text-decoration: none;color: inherit;}
+img{display: block;border: 0;}
+.cf:after{content: "";display: block;clear: both;}
+header{background: #ccc;}
+footer{background: #ccc;}
+#header{width: 1200px;height: 100px;margin: 0 auto;}
+#slide{width: 1200px;height: 300px;margin: 0 auto;}
+#content{width: 1200px;height: 200px;margin: 0 auto;}
+#footer{width: 1200px;height: 100px;margin: 0 auto;}
+.logo img{width: 180px;}
+.logo{
+    width: 180px;
+    height: 50px;
+    padding:25px 10px ;
+    float: left;
+}
+nav{width:1000px ;height: 100px;float: left;}
+.sub{display: none;}
+/* .gnb:hover .sub{display: block;} */
+.gnb{
+    width: 600px;
+    position: relative;
+    top:60px;left: 380px;
+    z-index: 10;
+}
+.gnb>li{width: 150px;float: left;}
+.gnb a{
+    text-align: center;
+    line-height: 40px;
+    background: #333;
+    color: #fff;
+}
+.gnb>li>a{background: #fff;color: #333;}
+.gnb>li:hover>a{background: #333;color:#fff;}
+.sub>li:hover>a{background:#fff ;color: #333;}
+.nav_back{
+    width: 1200px;
+    height: 160px;
+    position: absolute;
+    top:100px;
+    background: #333;
+    display: none;
+}
+
+#slide{overflow: hidden;}
+#slide ul{animation: slide 9s infinite;width: 400%;}
+#slide li{float: left;}
+@keyframes slide{
+    0%{margin-left: 0;}
+    33.333%{margin-left: -100%;}
+    66.666%{margin-left: -200%;}
+    100%{margin-left: -300%;}
+}
+#content section{
+    width: 380px;
+    height: 180px;
+    padding: 10px;
+    float: left;
+}
+#content h3{
+    line-height: 29px;
+    text-align: center;
+    border-bottom: 1px #333 solid;
+}
+.notice a{
+    line-height: 30px;
+    height: 30px;
+    padding: 0 10px;
+}
+.notice a:hover{background: #edf;}
+.subject{
+    width: 260px;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.date{width: 100px;float: left;text-align: right;}
+.gallery img{width: 100px;}
+.gallery li{
+    padding: 25px 0 25pc 20px;
+    float: left;
+}
+.gallery a:hover{opacity: .6;}
+.banner img{width: 100px;}
+.banner li{
+    float: left;
+
+}
+#content section:nth-child(3) a{
+    margin-top: 25px;
+}
+.f_left{width: 1000px;height: 100px;float: left;}
+.family{width: 200px;height: 100px;float: left;}
+.f_menu a{display: inline;}
+.f_menu{text-align: center;line-height: 40px;}
+.copyright{text-align: center;}
+.family select{width: 160px;height: 40px;margin-top: 30px;}
