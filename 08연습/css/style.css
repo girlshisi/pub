@@ -30,18 +30,18 @@ nav{width:1000px ;height: 100px;float: left;}
 .gnb a{
     text-align: center;
     line-height: 40px;
-    background: #333;
-    color: #fff;
+    
+    
 }
-.gnb>li>a{background: #fff;color: #333;}
-.gnb>li:hover>a{background: #333;color:#fff;}
-.sub>li:hover>a{background:#fff ;color: #333;}
+
+.gnb li:hover>a{background: #faf}
+.sub li:hover>a{background:#adf;}
 .nav_back{
     width: 1200px;
     height: 160px;
     position: absolute;
     top:100px;
-    background: #333;
+    background: #faf;
     display: none;
 }
 
@@ -98,4 +98,4 @@ nav{width:1000px ;height: 100px;float: left;}
 .f_menu a{display: inline;}
 .f_menu{text-align: center;line-height: 40px;}
 .copyright{text-align: center;}
-.family select{width: 160px;height: 40px;margin-top: 30px;}
+.family select{width: 160px;height: 30px;margin-top: 30px;}
